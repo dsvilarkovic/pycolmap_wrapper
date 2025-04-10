@@ -4,7 +4,7 @@ sys.path.append("..")
 import numpy as np
 import os
 
-from pycolmap import SceneManager
+from pycolmap_wrapper import SceneManager
 
 
 #-------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ from pycolmap import SceneManager
 #
 # inputs:
 # - ply_file: output file
-# - images: ordered array of pycolmap Image objects
+# - images: ordered array of pycolmap_wrapper Image objects
 # - color: color string for the camera
 # - scale: amount to shrink/grow the camera model
 def save_camera_ply(ply_file, images, scale):
